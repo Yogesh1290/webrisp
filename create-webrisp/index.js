@@ -37,9 +37,10 @@ const tsconfig = {
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "node",
-    "jsx": "react-jsx",
-    "jsxImportSource": "webrisp",
+    "moduleResolution": "bundler",
+    "jsx": "react",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
     "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true

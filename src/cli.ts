@@ -47,7 +47,7 @@ function loadPublicEnvForClient(cwd: string): Record<string, string> {
 
 export async function runCLI(args: string[]) {
   const command = args[0] || 'build';
-  console.log(`\n⚡ Webrisp HyperEdge Compiler v0.1.2\n`);
+  console.log(`\n⚡ Webrisp HyperEdge Compiler v0.1.5\n`);
 
   if (command === 'init') {
     console.log('🚀 Initializing a new Webrisp project...\n');
@@ -97,9 +97,10 @@ export async function runCLI(args: string[]) {
         "compilerOptions": {
           "target": "ESNext",
           "module": "ESNext",
-          "moduleResolution": "node",
-          "jsx": "react-jsx",
-          "jsxImportSource": "webrisp",
+          "moduleResolution": "bundler",
+          "jsx": "react",
+          "jsxFactory": "h",
+          "jsxFragmentFactory": "Fragment",
           "strict": true,
           "skipLibCheck": true,
           "esModuleInterop": true
