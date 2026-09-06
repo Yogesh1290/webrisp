@@ -1,0 +1,34 @@
+{
+  "name": "webrisp",
+  "version": "0.1.2",
+  "description": "The fastest, zero-bloat React framework. No Vite, No Next.js, No Hono.",
+  "private": false,
+  "type": "module",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "bin": {
+    "webrisp": "./dist/cli.js"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./client": "./dist/client.js"
+  },
+  "scripts": {
+    "build": "npx esbuild src/index.ts --bundle --format=esm --platform=node --packages=external --outfile=dist/index.js && npx esbuild src/client.ts --bundle --format=esm --platform=node --packages=external --outfile=dist/client.js && npx esbuild src/cli.ts --bundle --format=esm --platform=node --packages=external --outfile=dist/cli.js && cd example-app && npm install && npm run build",
+    "lint": "tsc --noEmit",
+    "start": "cd example-app && npm run start"
+  },
+  "dependencies": {
+    "@preact/signals": "^1.3.0",
+    "preact": "^10.22.0",
+    "preact-render-to-string": "^6.5.0",
+    "esbuild": "^0.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2"
+  }
+}

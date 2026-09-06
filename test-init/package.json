@@ -1,0 +1,11 @@
+{
+  "name": "my-webrisp-app",
+  "type": "module",
+  "scripts": {
+    "build": "webrisp build",
+    "start": "node --env-file=.env dist/server.js"
+  },
+  "dependencies": {
+    "webrisp": "latest"
+  }
+}

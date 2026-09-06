@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "jsxImportSource": "webrisp",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true
+  }
+}

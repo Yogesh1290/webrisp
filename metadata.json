@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Framework Architecture - version 2",
+  "description": "System design and masterplan for building a lightweight, scratch-built React framework.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
